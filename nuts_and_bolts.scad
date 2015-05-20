@@ -152,7 +152,7 @@ module nutHole(size, units=MM, tolerance = +0.0001, proj = -1)
 	}
 	if (proj == 2)
 	{
-		translate([-radius/2, 0])
+		translate([-radius, 0])
 			square([radius*2, height]);
 	}
 }
