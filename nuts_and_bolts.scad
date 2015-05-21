@@ -157,13 +157,13 @@ module nutHole(size, units=MM, tolerance = +0.0001, proj = -1)
 	}
 }
 
-module boltHole(size, units=MM, length, tolerance = +0.0001, proj = -1)
+module boltHole(size, units=MM, length, tolerance = +0.0001, proj = -1, extraCapHeight = 0)
 {
 	radius = COURSE_METRIC_BOLT_MAJOR_THREAD_DIAMETERS[size]/2+tolerance;
 //TODO: proper screw cap values
-	capHeight = METRIC_NUT_THICKNESS[size]+tolerance; //METRIC_BOLT_CAP_HEIGHTS[size]+tolerance;
+	capHeight = METRIC_NUT_THICKNESS[size]+tolerance+extraCapHeight; //METRIC_BOLT_CAP_HEIGHTS[size]+tolerance;
 	capRadius = METRIC_NUT_AC_WIDTHS[size]/2+tolerance; //METRIC_BOLT_CAP_RADIUS[size]+tolerance;
-
+    
 	if (proj == -1)
 	{
 	translate([0, 0, -capHeight])
