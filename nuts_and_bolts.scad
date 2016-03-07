@@ -17,7 +17,7 @@ INCH = "inch"; //Not yet supported
 //Based on: http://www.roymech.co.uk/Useful_Tables/Screws/Hex_Screws.htm
 METRIC_NUT_AC_WIDTHS =
 [
-	-1, //0 index is not used but reduces computation
+	5.80,//m2.5 //0 index is not used but reduces computation
 	-1,
 	-1,
 	6.40,//m3
@@ -57,7 +57,7 @@ METRIC_NUT_AC_WIDTHS =
 ];
 METRIC_NUT_THICKNESS =
 [
-	-1, //0 index is not used but reduces computation
+	2.00, //M2.5 //0 index is not used but reduces computation
 	-1,
 	-1,
 	2.40,//m3
@@ -98,7 +98,7 @@ METRIC_NUT_THICKNESS =
 
 COURSE_METRIC_BOLT_MAJOR_THREAD_DIAMETERS =
 [//based on max values
-	-1, //0 index is not used but reduces computation
+	2.50, //m2.5 //0 index is not used but reduces computation
 	-1,
 	-1,
 	2.98,//m3
